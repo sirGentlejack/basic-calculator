@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Javascript Calculator" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calcultor</title>
+  </head>
+  <body>
+    <br />
+    <form id="myForm" name="calc">
+      <input
+        name="display"
+        style="
+          width: 26rem;
+          height: 100px;
+          text-align: right;
+          background-color: #1f80c9;
+          padding: 0 10px;
+        "
+        class="display"
+      />
+      <br />
+      <input
+        type="button"
+        value="C"
+        onclick="calc.display.value=''"
+        style="background-color: #cc0000"
+        class="clear"
+      />
+      <h1 class="name">gentlejackB Calculator</h1>
+      <input
+        type="button"
+        value="1"
+        onclick="calc.display.value+='1'"
+        class="one"
+      />
+      <input
+        type="button"
+        value="2"
+        onclick="calc.display.value+='2'"
+        class="two"
+      />
+      <input
+        type="button"
+        value="+"
+        onclick="calc.display.value+='+'"
+        style="background-color: #cc5c11"
+        class="plus"
+      />
+      <br />
+      <input
+        type="button"
+        value="3"
+        onclick="calc.display.value+='3'"
+        class="three"
+      />
+      <input
+        type="button"
+        value="4"
+        onclick="calc.display.value+='4'"
+        class="four"
+      />
+      <input
+        type="button"
+        value="5"
+        onclick="calc.display.value+='5'"
+        class="five"
+      />
+      <input
+        type="button"
+        value="-"
+        onclick="calc.display.value+='-'"
+        style="background-color: #ba55d3"
+        class="minus"
+      />
+      <br />
+      <input
+        type="button"
+        value="6"
+        onclick="calc.display.value+='6'"
+        class="six"
+      />
+      <input
+        type="button"
+        value="7"
+        onclick="calc.display.value+='7'"
+        class="seven"
+      />
+      <input
+        type="button"
+        value="8"
+        onclick="calc.display.value+='8'"
+        class="eight"
+      />
+      <input
+        type="button"
+        value="x"
+        onclick="calc.display.value+='*'"
+        style="background-color: #7db1b2"
+        class="mutiply"
+      />
+      <br />
+      <input
+        type="button"
+        value="9"
+        onclick="calc.display.value+='9'"
+        class="nine"
+      />
+      <input
+        type="button"
+        value="0"
+        onclick="calc.display.value+='0'"
+        class="zero"
+      />
+      <input
+        type="button"
+        value="00"
+        onclick="calc.display.value+='00'"
+        class="doubleZero"
+      />
+      <input
+        type="button"
+        value="="
+        onclick="calc.display.value=eval( calc.display.value )"
+        class="equal"
+      />
+      <input
+        type="button"
+        value="&#247;"
+        onclick="calc.display.value+='/'"
+        style="background-color: green"
+        class="divide"
+      />
+      <input
+        type="button"
+        value="."
+        onclick="calc.display.value+='.'"
+        class="dot"
+      />
+    </form>
+  </body>
+</html>
